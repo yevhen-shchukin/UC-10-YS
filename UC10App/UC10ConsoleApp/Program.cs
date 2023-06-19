@@ -1,13 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-using UC10ConsoleApp.BL;
+﻿using UC10ConsoleApp.BL;
+using UC10ConsoleApp.Tests;
 
 Console.WriteLine("UC10 - START");
 
-var ucBl = new Uc10Bl();
+var uc10Tests = new Uc10Tests(new Uc10Bl());
 
-var inputString = "Lore7$Psum";
-
-var result = ucBl.RegExTest(inputString, 10);
-
-Console.WriteLine($"Result: {result}");
-
+uc10Tests.RunAllTests();
