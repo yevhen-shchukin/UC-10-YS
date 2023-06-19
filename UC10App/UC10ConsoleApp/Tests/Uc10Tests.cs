@@ -31,6 +31,8 @@ namespace UC10ConsoleApp.Tests
 			{
 				RunTest($"LoremP7{specialChar}sum", 11, true, $"Special character: {specialChar} ");
 			}
+
+			RunTest("LoremiP7<=m", 11, true, "Two special character");
 		}
 
 
